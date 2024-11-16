@@ -55,7 +55,7 @@
 }
 
 .accent-background {
-  --background-color: rgba(21, 158, 236, 1);
+  --background-color: rgba(191, 210, 248, 1);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #65c9cd;
@@ -1062,11 +1062,11 @@ section,
 .call-to-action h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--default-color);
+  color: var(--primary);
 }
 
 .call-to-action p {
-  color: var(--default-color);
+  color: var(--primary);
 }
 
 .call-to-action .cta-btn {
