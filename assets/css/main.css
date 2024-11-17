@@ -27,6 +27,7 @@
   --accent-color: rgba(31, 43, 108, 1); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --soft-blue:rgba(191, 210, 248, 1);
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -1024,6 +1025,12 @@ section,
   font-size: 20px;
 }
 
+.featured-services .service-item h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
 .featured-services .service-item h4 a {
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
@@ -1037,6 +1044,7 @@ section,
 }
 
 .featured-services .service-item:hover h4 a,
+.featured-services .service-item:hover h5,
 .featured-services .service-item:hover .icon i,
 .featured-services .service-item:hover p {
   color: var(--contrast-color);
@@ -1428,8 +1436,8 @@ section,
 /* Tombol kategori dengan animasi */
 .category-button {
   border: none;
-  background-color: #d4f8e8; /* Hijau lembut */
-  color: #2b8a6b; /* Warna teks hijau */
+  background-color: var(--soft-blue); /* Hijau lembut */
+  color: var(--primary); /* Warna teks hijau */
   font-weight: 500;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -1438,7 +1446,7 @@ section,
   transition: all 0.3s ease; /* Animasi */
 }
 .category-button:hover {
-  background-color: #2b8a6b; 
+  background-color: var(--primary); 
   color: white;
   transform: scale(1.1); /* Perbesar tombol */
 }
@@ -1543,8 +1551,79 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Berita/Article Section
+--------------------------------------------------------------*/
+.berita-header {
+  margin-bottom: 1.5rem;
+}
+
+.berita-header .badge {
+  background-color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.related-berita a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+.related-berita a:hover {
+  text-decoration: underline;
+  columns: var(--soft-blue);
+}
+
+.berita-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.social-icons a {
+  color: #6c757d;
+  margin-right: 0.5rem;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/*--------------------------------------------------------------
 # Doctors Section
 --------------------------------------------------------------*/
+/* Tambahkan shadow dan animasi hover untuk kartu */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-article-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-read-more {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-read-more:hover {
+  text-decoration: underline;
+  color: var(--soft-blue);
+}
+
+.badge-article {
+  background-color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
 .doctors .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
