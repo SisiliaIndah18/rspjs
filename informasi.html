@@ -106,72 +106,155 @@
 
   <main class="main">
 
-    <!-- Features Section -->
-    <section id="jadwal-pelayanan" class="features section">
+    <!-- Berita Section -->
+    <section id="jadwal-pelayanan" class="testimonials section">
 
-      <div class="container">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Jadwal Pelayanan</h2>
+      </div><!-- End Section Title -->
 
-        <div class="row justify-content-around gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/jadwal.png" alt=""></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <h3>Jadwal Pelayanan</h3>
-            <!-- <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi</p> -->
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000" data-breakpoints="{ &quot;320&quot;: { &quot;slidesPerView&quot;: 1, &quot;spaceBetween&quot;: 40 }, &quot;1200&quot;: { &quot;slidesPerView&quot;: 3, &quot;spaceBetween&quot;: 40 } }">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 20
+                },
+                "800": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Senin</a></h4>
-                <p>Buka dari pukul 08.00 – 15.00 WITA</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item" "="">
+                <div class="card" style="width: 20rem; border-radius: 5px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); border-style: none;">
+                  <img src="assets/img/doctors/doctors-4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title d-flex align-items-center justify-content-center">Dokter Sri Handayani</h5>
+                    <div class="d-flex align-items-center justify-content-center" style="gap:5px;">
+                      <span class="badge badge-article mb-2" style="font-size:14px;">Poli Paru</span>
+                      <span class="badge badge-article mb-2" style="font-size:14px;">Poli VCT</span>
+                      <span class="badge badge-article mb-2" style="font-size:14px;">Poli DOTS</span>
+                    </div>
+                    <!-- <h5 class="card-title">Poli Paru</h5> -->
+                    <table id="example" class="table table-striped" style="width:100%; font-size:14px;">
+                      <thead>
+                          <tr>
+                              <th>Hari</th>
+                              <th>Jam Operasional</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>Senin</td>
+                              <td>Tiger Nixon</td>
+                          </tr>
+                          <tr>
+                              <td>Selasa</td>
+                              <td>Garrett Winters</td>
+                          </tr>
+                          <tr>
+                              <td>Rabu</td>
+                              <td>Ashton Cox</td>
+                          </tr>
+                          <tr>
+                              <td>Kamis</td>
+                              <td>Ashton Cox</td>
+                          </tr>
+                          <tr>
+                              <td>Jum'at</td>
+                              <td>Ashton Cox</td>
+                          </tr>
+                      </tbody>  
+                  </table>
+                    <!-- <a href="insideberita.html">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a> -->
+                  </div>
+                </div>
               </div>
-            </div><!-- End Icon Box -->
+            </div><!-- End testimonial item -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Selasa</a></h4>
-                <p>Buka dari pukul 08.00 - 15.00 WITA</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="card" style="width: 20rem;border-radius: 5px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); border-style: none;">
+                  <img src="assets/img/doctors/doctors-4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text" style="margin-bottom: 15px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <a href="insideberita.html">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a> -->
+                  </div>
+                </div>
               </div>
-            </div><!-- End Icon Box -->
+            </div><!-- End testimonial item -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Rabu</a></h4>
-                <p>Buka dari pukul 08.00 - 15.00 WITA</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="card" style="width: 20rem; border-radius: 5px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); border-style: none;">
+                  <img src="assets/img/doctors/doctors-4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text" style="margin-bottom: 15px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <a href="insideberita.html">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a> -->
+                  </div>
+                </div>
               </div>
-            </div><!-- End Icon Box -->
+            </div><!-- End testimonial item -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Kamis</a></h4>
-                <p>Buka dari pukul 08.00 - 15.00 WITA</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="card" style="width: 20rem; border-radius: 5px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); border-style: none;">
+                  <img src="assets/img/doctors/doctors-4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text" style="margin-bottom: 15px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <a href="insideberita.html">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a> -->
+                  </div>
+                </div>
               </div>
-            </div><!-- End Icon Box -->
+            </div><!-- End testimonial item -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Jum'at</a></h4>
-                <p>Buka dari pukul 08.00 - 15.00 WITA</p>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="card" style="width: 20rem; border-radius: 5px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); border-style: none;">
+                  <img src="assets/img/doctors/doctors-4.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text" style="margin-bottom: 15px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <a href="insideberita.html">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a> -->
+                  </div>
+                </div>
               </div>
-            </div><!-- End Icon Box -->
-
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-              <i class="fa-solid fa-calendar-check"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Sabtu dan Minggu</a></h4>
-                <p>Tutup</p>
-              </div>
-            </div><!-- End Icon Box -->
+            </div><!-- End testimonial item -->
 
           </div>
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
 
-    </section><!-- /Features Section -->
+    </section><!-- /Testimonials Section -->
 
     <!-- Featured Services Section -->
     <section id="antrian-farmasi" class="featured-services section">
@@ -188,7 +271,8 @@
 
           <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fa-solid fa-tablets"></i>
+              <div class="icon">
+                <i class="fa-solid fa-tablets"></i>
               <h4><a href="#kontak" class="stretched-link">Obat Jadi</a></h4>
               </div>
               <h5>X-21</h5>
@@ -197,7 +281,9 @@
 
           <div class="col-xl-3 col-md-6 " data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="fa-solid fa-capsules"></i></div>
+              <div class="icon">
+                <i class="fa-solid fa-capsules"></i>
+              </div>
               <h4><a href="" class="stretched-link">Obat Racikan</a></h4>
               <h5>Y-18</h5>
             </div>
