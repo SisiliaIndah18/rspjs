@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Pasien</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(180deg, #f3f4f6, #BFD2F8);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .registration-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .registration-card h2 {
+            font-weight: bold;
+            color: #1F2B6C;
+        }
+
+        .registration-card p {
+            font-size: 16px;
+            color: #374151;
+        }
+
+        .input-group {
+            margin-top: 20px;
+        }
+
+        .input-group input {
+            border-radius: 25px 0 0 25px;
+            padding: 10px 20px;
+        }
+
+        .input-group .btn {
+            border-radius: 0 25px 25px 0;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 15px;
+            margin-right: 7px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .registration-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-card text-center">
+        <img src="../assets/img/logo.png" alt="Logo RSUD PJS" class="logo">
+        <h2>Anjungan Registrasi Mandiri</h2>
+        <p>Silahkan Scan <strong>Kartu Pasien</strong> Anda!</p>
+        <p>Masukkan No. RM/KTP/JKN Pasien di bawah ini:</p>
+        <div class="input-group">
+            <input type="text" id="patientId" class="form-control" placeholder="No. RM/KTP/JKN" aria-label="No. RM/KTP/JKN">
+            <button class="btn" style="background-color: #1F2B6C; color: #BFD2F8;" onclick="submitForm()">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <small id="errorMessage" class="text-danger mt-3 d-none">Harap masukkan nomor yang valid.</small>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script>
+        function submitForm() {
+            const patientId = document.getElementById("patientId").value;
+            if (patientId.trim() === "") {
+                alert("Harap masukkan No. RM/KTP/JKN.");
+            } else {
+                window.location.href = "../formulir/poli.html";
+            }
+        }
+    </script>
+</body>
+</html>

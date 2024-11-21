@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Pasien</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(180deg, #f3f4f6, #BFD2F8);
+            height: 100vh;
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #1a3b8f;
+        }
+        .sub-header {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+        }
+        .dokter-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .dokter-list .list-group-item {
+            background-color: #BFD2F8;
+            color: black;
+        }
+        .search-input {
+            border-radius: 30px;
+        }
+        .btn-search {
+            border-radius: 50%;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h1 class="header">Silahkan Pilih Dokter</h1>
+        </div>
+        <div class="card p-4">
+            <div class="text-center mb-4">
+                <p class="sub-header mb-1">No. RM: <strong>012770</strong></p>
+                <p class="sub-header" style="margin-bottom: 5px;">Nama Pasien: <strong>SUPIANI SURI</strong></p>
+                <p class="sub-header">Unit Poli/Klinik: <strong>Poli Jiwa</strong></p>
+            </div>
+
+            <!-- Dokter List -->
+            <div class="dokter-list">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action" onclick="navigateTo('saved.html')">dr. Herman, Sp.KJ</li>
+                    <li class="list-group-item list-group-item-action" onclick="navigateTo('saved.html')">dr. THOMAS HENDRIKO, M.Ked(KJ), Sp.KJ</li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mt-4">
+                <label for="search" class="form-label">Kata Kunci:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control search-input" id="search" placeholder="Cari Dokter...">
+                    <button class="btn btn-primary btn-search" style="background-color: #1a3b8f; color: #BFD2F8;" onclick="searchDokter()">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button type="button" class="btn btn-action" style="background-color: #1F2B6C; color: #BFD2F8;" onclick="navigateTo('poli.html')">
+                    <i class="fa-solid fa-times"></i> Batal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function searchDokter() {
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            const items = document.querySelectorAll('.list-group-item');
+
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchInput)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Function to handle navigation
+        function navigateTo(page) {
+            window.location.href = page; // Redirects to the specified page
+        }
+    </script>
+</body>
+</html>
