@@ -838,7 +838,7 @@ section,
 @media (max-height: 500px),
 (max-width: 580px) {
   .hero .carousel {
-    min-height: 100vh;
+    min-height: 60vh;
   }
 }
 
@@ -890,6 +890,10 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 30px;
+  }
+
+  .hero img {
+    object-fit: contain; /* Untuk menampilkan keseluruhan gambar pada layar kecil */
   }
 }
 
