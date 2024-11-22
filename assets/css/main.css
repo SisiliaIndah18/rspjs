@@ -1557,6 +1557,24 @@ section,
 /*--------------------------------------------------------------
 # Berita/Article Section
 --------------------------------------------------------------*/
+.pagination li a {
+  color: var(--primary); /* Warna biru */
+}
+
+.pagination li a:hover {
+  color: var(--primary); /* Warna biru gelap saat hover */
+}
+
+.pagination .disabled span {
+  color: #6c757d; /* Warna abu-abu untuk tombol disabled */
+}
+
+.pagination .active span {
+  background-color: var(--primary); /* Warna biru untuk halaman aktif */
+  border-color: var(--primary);
+  color: white;
+}
+
 .berita-header {
   margin-bottom: 1.5rem;
 }
