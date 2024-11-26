@@ -666,6 +666,27 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Profil -> Visi Misi
+--------------------------------------------------------------*/
+.content-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.section-title-visimisi {
+  font-weight: bold;
+  color: #fff;
+  background-color: #1e3a8a;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.motto, .visi, .misi {
+  margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
